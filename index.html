@@ -40,6 +40,31 @@
             opacity: 0.9;
         }
         
+        .code-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.75rem 2rem;
+            background: white;
+            color: #667eea;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .code-button:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .code-button:active {
+            transform: translateY(0);
+        }
+        
         .videos-container {
             display: flex;
             flex-direction: column;
@@ -119,6 +144,7 @@
     <div class="container">
         <div class="header">
             <h1>DuplexCascade: Enabling Full-Duplex Spoken Dialogue via VAD-Free Cascaded Large Language Models</h1>
+            <button class="code-button" onclick="showCodeMessage()">code</button>
         </div>
         
         <div class="videos-container">
@@ -154,7 +180,11 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        function showCodeMessage() {
+            alert('Code will be available upon acceptace!');
+        }
+    </script>
 </body>
 </html>
-
-<<<<<<< HEAD
