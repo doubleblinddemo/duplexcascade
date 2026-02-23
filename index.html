@@ -40,9 +40,17 @@
             opacity: 0.9;
         }
         
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .paper-button,
         .code-button {
             display: inline-block;
-            margin-top: 1.5rem;
             padding: 0.75rem 2rem;
             background: white;
             color: #667eea;
@@ -55,12 +63,14 @@
             text-decoration: none;
         }
         
+        .paper-button:hover,
         .code-button:hover {
             background: rgba(255, 255, 255, 0.9);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         
+        .paper-button:active,
         .code-button:active {
             transform: translateY(0);
         }
@@ -144,7 +154,10 @@
     <div class="container">
         <div class="header">
             <h1>DuplexCascade: Enabling Full-Duplex Spoken Dialogue via VAD-Free Cascaded Large Language Models</h1>
-            <button class="code-button" onclick="showCodeMessage()">code</button>
+            <div class="buttons-container">
+                <button class="paper-button">paper</button>
+                <button class="code-button" onclick="showCodeMessage()">code</button>
+            </div>
         </div>
         
         <div class="videos-container">
